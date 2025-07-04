@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds8421tmmdnq"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lo8xd"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_o7cr7"]
+distance = -157.0
+
+[node name="Barrier" type="StaticBody2D"]
+
+[node name="ceiling" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+rotation = -3.14159
+shape = SubResource("WorldBoundaryShape2D_lo8xd")
+
+[node name="floor" type="CollisionShape2D" parent="."]
+position = Vector2(0, 696)
+shape = SubResource("WorldBoundaryShape2D_o7cr7")

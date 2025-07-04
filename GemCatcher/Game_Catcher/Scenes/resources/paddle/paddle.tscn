@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsuk73ukyxc0u"]
+
+[ext_resource type="Script" uid="uid://bio3wx8vgkg0w" path="res://Game_Catcher/Scenes/resources/paddle/paddle.gd" id="1_5yfp6"]
+[ext_resource type="Texture2D" uid="uid://cl6e41i8r10hk" path="res://Game_Catcher/Scenes/resources/paddle/assets/head.png" id="2_wkawl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wjc8s"]
+radius = 38.8273
+
+[node name="Paddle" type="Area2D"]
+script = ExtResource("1_5yfp6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.76837e-07, -8)
+scale = Vector2(0.111328, 0.111328)
+texture = ExtResource("2_wkawl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+scale = Vector2(1.5, 1.5)
+shape = SubResource("CircleShape2D_wjc8s")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

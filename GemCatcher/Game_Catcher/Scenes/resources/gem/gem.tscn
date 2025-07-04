@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bv1jcmdb3x0uq"]
+
+[ext_resource type="Script" uid="uid://ca0i6pd86lwcu" path="res://Game_Catcher/Scenes/resources/gem/gem.gd" id="1_107rm"]
+[ext_resource type="Texture2D" uid="uid://fopsu0q3upem" path="res://Game_Catcher/Scenes/resources/gem/assets/chicken.png" id="2_g7j84"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ftkuq"]
+radius = 11.16
+height = 55.88
+
+[node name="Gem" type="Area2D"]
+script = ExtResource("1_107rm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 24)
+scale = Vector2(0.136435, 0.136435)
+texture = ExtResource("2_g7j84")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 22)
+rotation = -1.89543
+shape = SubResource("CapsuleShape2D_ftkuq")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
