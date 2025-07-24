@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx6vuox6n6v7v"
-path="res://.godot/imported/arrow.png-e8068b705b8a2e13d8ed2251b878fd51.ctex"
+uid="uid://bf3olnt2x5030"
+path="res://.godot/imported/parrot.png-6deabbbe677ea412390af8c7a429710e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/items/arrow.png"
-dest_files=["res://.godot/imported/arrow.png-e8068b705b8a2e13d8ed2251b878fd51.ctex"]
+source_file="res://Scenes/Animal/assets/parrot.png"
+dest_files=["res://.godot/imported/parrot.png-6deabbbe677ea412390af8c7a429710e.ctex"]
 
 [params]
 
